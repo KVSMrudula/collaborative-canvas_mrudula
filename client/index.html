@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collaborative Canvas</title>
+  <style>
+    body { margin:0; overflow:hidden; font-family: sans-serif; }
+    canvas { border:1px solid #000; display:block; margin:0 auto; z-index:1; position:relative; background:white; }
+    #controls { position:fixed; top:10px; left:10px; z-index:1000; }
+    #controls > * { margin-right:5px; padding:5px 10px; font-size:14px; }
+    #userColorBox { position:fixed; top:10px; right:10px; z-index:1000; width:30px; height:30px; border:1px solid #000; }
+    .cursor { position:absolute; width:10px; height:10px; border-radius:50%; pointer-events:none; z-index:2000; border:1px solid #000; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="undoBtn">Undo</button>
+    <button id="clearBtn">Clear</button>
+    <input type="color" id="colorPicker" value="#000000">
+    <label>Stroke: <input type="range" id="strokeWidth" min="1" max="20" value="2"></label>
+  </div>
+  <div id="userColorBox"></div>
+  <canvas id="canvas"></canvas>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
