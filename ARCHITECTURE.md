@@ -64,25 +64,4 @@ The application ensures **global synchronization**, allowing multiple users to d
 
 ---
 
-## Conflict Handling
 
-- Multiple users drawing at the same location → strokes overlay naturally  
-- Undo always removes **last stroke globally**, regardless of who drew it  
-
----
-
-## Optional Enhancements
-
-- Adjustable stroke width  
-- Color picker per user  
-- Live cursors for all users  
-- Clear canvas globally  
-
----
-
-## Limitations / Future Improvements
-
-- No persistent storage (refresh loses strokes)  
-- Redo not implemented  
-- Mobile touch support limited  
-- Throttling recommended for large-scale users
