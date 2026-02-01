@@ -45,15 +45,17 @@ Collaborative Canvas is a **real-time, multi-user drawing application**. Multipl
 
 
 ## File Structure
-
 collaborative-canvas/
 ├── client/
-│   ├── index.html
-│   ├── main.js
-│   └── style.css
+│ ├── index.html
+│ ├── main.js
+│ └── style.css
 ├── server/
-│   └── server.js
+│ └── server.js
 ├── package.json
 ├── README.md
 └── ARCHITECTURE.md
+
+
+
 
